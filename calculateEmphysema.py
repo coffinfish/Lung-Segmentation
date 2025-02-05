@@ -15,6 +15,8 @@ if __name__ == "__main__":
 
     # Set Threshold
     x = -910
+    
+    # TO DO: UPDATE PATH TO FILE
     ct = ctimage.Segmenter(f"data/lauge-soerensen/images/subject{patientNum}_{slice}.tiff")
     ct.set_threshold(-910, cv.THRESH_BINARY)
     ct.set_bgmask()

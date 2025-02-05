@@ -12,7 +12,8 @@ if __name__ == "__main__":
 
     # Select slice (middle, top, bottom)
     slice = "middle"
-
+    
+    # TO DO: UPDATE PATH TO FILE
     ct = ctimage.Segmenter(f"data/lauge-soerensen/images/subject{patientNum}_{slice}.tiff")
     ct.set_threshold(0, cv.THRESH_BINARY)
     ct.set_bgmask()
